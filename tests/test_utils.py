@@ -39,6 +39,8 @@ def test_sort_operration(list_with_dict):
 
 def test_mask_operation_info(list_with_dict):
     assert mask_operation_info(list_with_dict[1]) == 'Visa Classic 683198** **** 7658 ->'
+    assert mask_operation_info(list_with_dict[4]) == '->'
+    assert mask_operation_info(list_with_dict[0]) == 'Счет **4368 '
 
 def test_operation_to(list_with_dict):
     assert operation_to(list_with_dict[1]) == 'Счет **5229'
